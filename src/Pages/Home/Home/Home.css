@@ -12,7 +12,24 @@
 .item {
     margin-top: -150px;
     position: absolute;
-
     padding: 50px;
 
+}
+
+@media only screen and (max-width:592px) {
+    .home {
+        padding: 50px;
+        opacity: 0.9;
+        color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 15px;
+        position: relative;
+    }
+
+    /* .item {
+        padding: 10px;
+        flex-direction: row;
+
+    } */
 }
