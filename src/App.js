@@ -8,6 +8,7 @@ import Login from './Pages/Login/Login/Login';
 import Services from './Pages/Services/Services';
 import SignUP from './Pages/SignUP/SignUP';
 import Error from './Pages/Error/Error';
+import Footer from './Pages/Footer/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='*' element={<Error></Error>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

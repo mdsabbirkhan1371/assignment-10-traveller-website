@@ -4,12 +4,14 @@ import home1 from '../../../images/home/h-1.webp'
 import home2 from '../../../images/home/h-2.webp'
 import home4 from '../../../images/home/h-4.webp'
 import About from '../../About/About';
+import Partners from '../../Partner/Partners';
+import Services from '../../Services/Services';
 import './Home.css'
 
 const Home = () => {
 
     return (
-        <div className='my-5'>
+        <div>
             <div className='home text-center mb-2' >
                 <p>Travel Agency Trevia</p>
                 <h1>Explore the World and Become</h1>
@@ -36,6 +38,8 @@ const Home = () => {
             <div className='py-5'>
                 <About></About>
             </div>
+            <Services></Services>
+            <Partners></Partners>
         </div>
     );
 };

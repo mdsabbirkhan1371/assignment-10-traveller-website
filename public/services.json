@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Transportation",
+        "description": "We will provide all kinds of transportation service when you are with us.All service are managed by our team member.Hope fully you guys are most enjoy the Tour.Thanks for stay with us. ",
+        "img": "https://i.ibb.co/nwkcZP0/transportion.png"
+    },
+    {
+        "id": 2,
+        "name": "Food & Drink",
+        "description": "Food and Beverage Services can be broadly defined as the process of preparing, presenting and serving of food and beverages to the customers. On Premise − Food is delivered where it is prepared. The customer visits the premise to avail the food service.",
+        "img": "https://i.ibb.co/VpTYXDB/food.png"
+    },
+    {
+        "id": 3,
+        "name": "Medical Devices",
+        "description": "A medical device can be any instrument, apparatus, implement, machine, appliance, implant, reagent for in vitro use, software, material or other similar or related article, intended by the manufacturer to be used, alone or in combination for a medical purpose",
+        "img": "https://i.ibb.co/PjM6Ypp/medical.png"
+    },
+    {
+        "id": 4,
+        "name": "Lodging",
+        "description": "The man behind the check-in counter gives the impression that he has just axe-murdered the motel's owner (and family, and family pet) and is going through these procedures of hostelry so as not to arouse suspicion",
+        "img": "https://i.ibb.co/8rc3bf2/loadging.png"
+    },
+    {
+        "id": 5,
+        "name": "Good Memories",
+        "description": "The most beautiful things are not associated with money; they are memories and moments. If you don't celebrate those, they can pass you by.",
+        "img": "https://i.ibb.co/Dk906FR/good-memorises.png"
+    },
+    {
+        "id": 6,
+        "name": "Top Services",
+        "description": "We have many top service for our customer.We hope our customer are satisfied with our services. We are here to help you.Welcome to our Company.",
+        "img": "https://i.ibb.co/X2Zr5yd/services.webp"
+    }
+]

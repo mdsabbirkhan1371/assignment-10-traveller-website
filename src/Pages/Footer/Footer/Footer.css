@@ -1,0 +1,9 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer-container {
+    background-color: gainsboro;
+}
