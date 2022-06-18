@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.item {
+.items {
     margin-top: -150px;
     position: absolute;
     padding: 50px;
@@ -27,9 +27,19 @@
         position: relative;
     }
 
-    /* .item {
-        padding: 10px;
-        flex-direction: row;
+    .items {
+        padding: 5px;
+        font-size: 10px;
 
-    } */
+    }
+
+    .item {
+        padding: 5px;
+    }
+
+    .item h3 {
+        font-size: medium;
+
+    }
+
 }

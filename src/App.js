@@ -11,7 +11,7 @@ import Error from './Pages/Error/Error';
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
       <Header></Header>
       <Routes>
