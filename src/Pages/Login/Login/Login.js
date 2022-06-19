@@ -3,10 +3,11 @@ import React, { useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import Loading from '../Loading/Loading';
 
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -18,7 +19,10 @@ const Login = () => {
     const emailRef = useRef('')
     const passwordRef = useRef('')
     const navigate = useNavigate();
+    const location = useLocation()
+    let from = location.state?.from?.pathname || "/";
 
+    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -26,9 +30,8 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
-        auth
-    );
+    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
+
     const resetPassword = async () => {
         const email = emailRef.current.value;
         if (email) {
@@ -39,9 +42,19 @@ const Login = () => {
             toast('Enter Your Email Please')
         }
     }
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
+    if (error) {
+        errorElement =
+            <div>
+                <p className='text-danger'>Error: {error?.message}</p>
+            </div>
+
+    }
 
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
 
     const handleLogin = event => {
@@ -78,6 +91,7 @@ const Login = () => {
                 </Button>
                 <ToastContainer />
             </Form>
+            {errorElement}
 
             <SocialLogin></SocialLogin>
 

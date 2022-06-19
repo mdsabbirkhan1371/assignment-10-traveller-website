@@ -6,6 +6,7 @@ import './SignUP.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../src/firebase.init'
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
+import Loading from '../Login/Loading/Loading';
 
 
 
@@ -22,7 +23,9 @@ const SignUP = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-
+    if (loading) {
+        return <Loading></Loading>
+    }
     if (user) {
         navigate('/')
     }
