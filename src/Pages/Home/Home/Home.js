@@ -16,7 +16,7 @@ const Home = () => {
                 <p>Travel Agency Trevia</p>
                 <h1>Explore the World and Become</h1>
                 <h1>Your Own Tour Guide</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>The journey is sometimes even more fulfilling than the destination, which is why travel agency blogs often discuss roadtrips. Who can resist the allure of the open road? Offering tips on how to travel long miles and where to will definitely earn its share of readership.</p>
                 <button className='btn btn-primary px-4 mt-3 rounded-pill'>Learn more</button>
             </div>
             <div className='items'>

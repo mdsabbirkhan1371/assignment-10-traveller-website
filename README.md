@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## I used in this project:
+In this project i used html,css,javascript,react-js etc.
 ## Available Scripts
 
 In the project directory, you can run:
