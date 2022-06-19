@@ -5,6 +5,9 @@ import { Link, useNavigate } from "react-router-dom";
 import './SignUP.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../src/firebase.init'
+import SocialLogin from '../Login/SocialLogin/SocialLogin';
+
+
 
 
 const SignUP = () => {
@@ -18,7 +21,7 @@ const SignUP = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
     if (user) {
         navigate('/')
@@ -36,20 +39,20 @@ const SignUP = () => {
             <Form onSubmit={handleSignUp}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    <Form.Control ref={emailRef} name='email' type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    <Form.Control ref={passwordRef} name='password' type="password" placeholder="Password" required />
                 </Form.Group>
                 <p className='link'>Allready have an Account? <Link to='/login'>Please Login</Link></p>
                 <Button variant="primary" type="submit">
                     SignUp
                 </Button>
-
-
             </Form>
+            <SocialLogin></SocialLogin>
+
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import Service from '../Service/Service';
 import './services.css'
 
@@ -28,6 +29,7 @@ const Services = () => {
 
                 </div>
             </div>
+
         </div>
     );
 };
