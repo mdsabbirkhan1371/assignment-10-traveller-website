@@ -12,6 +12,8 @@ import Footer from './Pages/Footer/Footer/Footer';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Checkout from './Pages/Checkout/Checkout';
+import Blogs from './Pages/Blogs/Blogs';
+import AboutMe from './Pages/AboutMe/AboutMe';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path='/signup' element={<SignUP></SignUP>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetails></ServiceDetails>}></Route>
+        <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/checkout' element={<RequireAuth>
           <Checkout></Checkout>
         </RequireAuth>}></Route>
