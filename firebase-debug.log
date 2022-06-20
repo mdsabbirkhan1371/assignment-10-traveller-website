@@ -1,13 +1,13 @@
-[debug] [2022-06-19T21:58:33.369Z] ----------------------------------------------------------------------
-[debug] [2022-06-19T21:58:33.371Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. Sabbir Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-06-19T21:58:33.371Z] CLI Version:   11.1.0
-[debug] [2022-06-19T21:58:33.372Z] Platform:      win32
-[debug] [2022-06-19T21:58:33.372Z] Node Version:  v16.14.0
-[debug] [2022-06-19T21:58:33.373Z] Time:          Mon Jun 20 2022 05:58:33 GMT+0800 (China Standard Time)
-[debug] [2022-06-19T21:58:33.373Z] ----------------------------------------------------------------------
+[debug] [2022-06-20T14:49:12.077Z] ----------------------------------------------------------------------
+[debug] [2022-06-20T14:49:12.079Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Md. Sabbir Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-06-20T14:49:12.079Z] CLI Version:   11.1.0
+[debug] [2022-06-20T14:49:12.080Z] Platform:      win32
+[debug] [2022-06-20T14:49:12.080Z] Node Version:  v16.14.0
+[debug] [2022-06-20T14:49:12.081Z] Time:          Mon Jun 20 2022 22:49:12 GMT+0800 (China Standard Time)
+[debug] [2022-06-20T14:49:12.081Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-06-19T21:58:33.433Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-06-19T21:58:33.433Z] > authorizing via signed-in user (mdsabbirkhan1972@gmail.com)
+[debug] [2022-06-20T14:49:12.147Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-20T14:49:12.148Z] > authorizing via signed-in user (mdsabbirkhan1972@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -30,36 +30,15 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2022-06-19T21:58:39.071Z] Using project from CLI flag: genious-car-services-28ea5
-[debug] [2022-06-19T21:58:39.073Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 [none]
-[debug] [2022-06-19T21:58:39.922Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 200
-[debug] [2022-06-19T21:58:39.922Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 {"projectId":"genious-car-services-28ea5","projectNumber":"1046776207957","displayName":"genious car services","name":"projects/genious-car-services-28ea5","resources":{"hostingSite":"genious-car-services-28ea5"},"state":"ACTIVE"}
+[debug] [2022-06-20T14:49:45.661Z] Using project from CLI flag: genious-car-services-28ea5
+[debug] [2022-06-20T14:49:45.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 [none]
+[debug] [2022-06-20T14:49:46.380Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 200
+[debug] [2022-06-20T14:49:46.381Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 {"projectId":"genious-car-services-28ea5","projectNumber":"1046776207957","displayName":"genious car services","name":"projects/genious-car-services-28ea5","resources":{"hostingSite":"genious-car-services-28ea5"},"state":"ACTIVE"}
 [info] i  Using project genious-car-services-28ea5 (genious car services) 
 [info] 
-=== Database Setup
-[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
-[debug] [2022-06-19T21:58:39.928Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com [none]
-[debug] [2022-06-19T21:58:41.892Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com 200
-[debug] [2022-06-19T21:58:41.892Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com [omitted]
-[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
-[debug] [2022-06-19T21:58:41.893Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com:enable [none]
-[debug] [2022-06-19T21:58:43.859Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com:enable 200
-[debug] [2022-06-19T21:58:43.860Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com:enable [omitted]
-[debug] [2022-06-19T21:58:53.871Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com [none]
-[debug] [2022-06-19T21:58:55.667Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com 200
-[debug] [2022-06-19T21:58:55.667Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/genious-car-services-28ea5/services/firebasedatabase.googleapis.com [omitted]
-[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+=== Hosting Setup
 [info] 
-[debug] [2022-06-19T21:58:55.682Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 [none]
-[debug] [2022-06-19T21:58:56.461Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 200
-[debug] [2022-06-19T21:58:56.461Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/genious-car-services-28ea5 {"projectId":"genious-car-services-28ea5","projectNumber":"1046776207957","displayName":"genious car services","name":"projects/genious-car-services-28ea5","resources":{"hostingSite":"genious-car-services-28ea5"},"state":"ACTIVE"}
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
 [info] 
-[info] Firebase Realtime Database Security Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[debug] [2022-06-19T21:59:13.789Z] Error: kill ENOSYS
-    at process.kill (node:internal/process/per_thread:220:13)
-    at process.listener (C:\Users\Md. Sabbir Khan\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
-    at process.emit (node:events:520:28)
-[error] 
-[error] Error: An unexpected error has occurred.
